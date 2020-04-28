@@ -159,6 +159,15 @@ extension DatabaseBridge {
             try $0.cachedQuery(table: table, query: query)
         }
     }
+    
+    @objc(uquery:query:resolve:reject:)
+    func uquery(tag: ConnectionTag,
+               query: Database.SQL,
+               resolve: @escaping RCTPromiseResolveBlock, reject: @escaping RCTPromiseRejectBlock) {
+        withDriver(tag, resolve, reject) {
+            try $0.uQuery(query: query)
+        }
+    }
 
     @objc(count:query:resolve:reject:)
     func count(tag: ConnectionTag,

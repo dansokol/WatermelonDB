@@ -186,6 +186,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 39DF4FDE1E00394E00F5B4B2;
@@ -353,7 +354,7 @@
 					"$(SRCROOT)/../../../react-native/React/**",
 					"$(SRCROOT)/../../node_modules/react-native/Libraries/**",
 					"$(SRCROOT)/../../../../node_modules/react-native/Libraries/**",
-					"$(SRCROOT)/../../../../../ios/Pods/Headers/Public/**",
+					"$(SRCROOT)/../../../../../ios/Pods/Headers/Public/React-Core/**",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -404,7 +405,7 @@
 					"$(SRCROOT)/../../../react-native/React/**",
 					"$(SRCROOT)/../../node_modules/react-native/Libraries/**",
 					"$(SRCROOT)/../../../../node_modules/react-native/Libraries/**",
-					"$(SRCROOT)/../../../../../ios/Pods/Headers/Public/**",
+					"$(SRCROOT)/../../../../../ios/Pods/Headers/Public/React-Core/**",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (

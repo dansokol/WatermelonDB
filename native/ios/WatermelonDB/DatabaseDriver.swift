@@ -57,6 +57,12 @@ class DatabaseDriver {
         markAsCached(table, id)
         return record.resultDictionary!
     }
+    
+    func uQuery(query: Database.SQL) throws -> [Any] {
+        return try database.queryRaw(query).map { row in
+            return row.resultDictionary!
+        }
+    }
 
     func cachedQuery(table: Database.TableName, query: Database.SQL) throws -> [Any] {
         return try database.queryRaw(query).map { row in
